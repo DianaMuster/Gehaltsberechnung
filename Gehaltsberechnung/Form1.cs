@@ -16,5 +16,42 @@ namespace Gehaltsberechnung
         {
             InitializeComponent();
         }
+
+        double brutto, sv, steuer, bg, netto;
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            //Textbrutto, LblAnzeige
+            //sv = brutto * 27.68 /100
+            //bemessungsgrundlage = brutto - sv
+            // if bg > 915 mit szeuer / <= 915 keine steuer
+            // netto bg - steuer
+
+            brutto = Convert.ToDouble(TxtBrutto.Text);
+            sv = brutto * 27.68 / 100;
+            bg = brutto - sv;
+            if(bg > 915)
+            {
+                steuer = bg * 25 / 100;
+            } else
+            {
+                steuer = 0;
+            }
+
+            netto = bg - steuer;
+
+            /*
+             * Brutto: 0
+             * SV: 0
+             * Steuer: 0
+             * Netto: 0
+             *  */
+            LblAnzeige.Text = "Brutto: " + brutto + "\n"
+                + "SV: " + sv + "\n" 
+                + "Steuer: " + steuer + "\n"
+                + "Netto: " + netto;
+                
+
+        }
     }
 }

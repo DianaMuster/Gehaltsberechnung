@@ -30,9 +30,9 @@ namespace Gehaltsberechnung
         private void InitializeComponent()
         {
             this.lbl1 = new System.Windows.Forms.Label();
-            this.txt = new System.Windows.Forms.TextBox();
+            this.TxtBrutto = new System.Windows.Forms.TextBox();
             this.btn = new System.Windows.Forms.Button();
-            this.LBL = new System.Windows.Forms.Label();
+            this.LblAnzeige = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl1
@@ -44,38 +44,39 @@ namespace Gehaltsberechnung
             this.lbl1.TabIndex = 0;
             this.lbl1.Text = "Brutto";
             // 
-            // txt
+            // TxtBrutto
             // 
-            this.txt.Location = new System.Drawing.Point(78, 119);
-            this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(155, 26);
-            this.txt.TabIndex = 1;
+            this.TxtBrutto.Location = new System.Drawing.Point(40, 119);
+            this.TxtBrutto.Name = "TxtBrutto";
+            this.TxtBrutto.Size = new System.Drawing.Size(194, 26);
+            this.TxtBrutto.TabIndex = 1;
             // 
             // btn
             // 
             this.btn.Location = new System.Drawing.Point(278, 119);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(132, 26);
+            this.btn.Size = new System.Drawing.Size(165, 62);
             this.btn.TabIndex = 2;
             this.btn.Text = "Berechnen";
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
-            // LBL
+            // LblAnzeige
             // 
-            this.LBL.AutoSize = true;
-            this.LBL.Location = new System.Drawing.Point(74, 251);
-            this.LBL.Name = "LBL";
-            this.LBL.Size = new System.Drawing.Size(0, 20);
-            this.LBL.TabIndex = 3;
+            this.LblAnzeige.AutoSize = true;
+            this.LblAnzeige.Location = new System.Drawing.Point(74, 251);
+            this.LblAnzeige.Name = "LblAnzeige";
+            this.LblAnzeige.Size = new System.Drawing.Size(0, 20);
+            this.LblAnzeige.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 459);
-            this.Controls.Add(this.LBL);
+            this.Controls.Add(this.LblAnzeige);
             this.Controls.Add(this.btn);
-            this.Controls.Add(this.txt);
+            this.Controls.Add(this.TxtBrutto);
             this.Controls.Add(this.lbl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -87,9 +88,9 @@ namespace Gehaltsberechnung
         #endregion
 
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.TextBox TxtBrutto;
         private System.Windows.Forms.Button btn;
-        private System.Windows.Forms.Label LBL;
+        private System.Windows.Forms.Label LblAnzeige;
     }
 }
 
