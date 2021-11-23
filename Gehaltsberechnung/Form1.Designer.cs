@@ -29,36 +29,36 @@ namespace Gehaltsberechnung
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.txt = new System.Windows.Forms.TextBox();
+            this.btn = new System.Windows.Forms.Button();
             this.LBL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(83, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Brutto";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(83, 81);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(53, 20);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Brutto";
             // 
-            // textBox1
+            // txt
             // 
-            this.textBox1.Location = new System.Drawing.Point(78, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 26);
-            this.textBox1.TabIndex = 1;
+            this.txt.Location = new System.Drawing.Point(78, 119);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(155, 26);
+            this.txt.TabIndex = 1;
             // 
-            // button1
+            // btn
             // 
-            this.button1.Location = new System.Drawing.Point(278, 119);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 26);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Berechnen";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn.Location = new System.Drawing.Point(278, 119);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(132, 26);
+            this.btn.TabIndex = 2;
+            this.btn.Text = "Berechnen";
+            this.btn.UseVisualStyleBackColor = true;
             // 
             // LBL
             // 
@@ -74,9 +74,9 @@ namespace Gehaltsberechnung
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 459);
             this.Controls.Add(this.LBL);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.txt);
+            this.Controls.Add(this.lbl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -86,9 +86,9 @@ namespace Gehaltsberechnung
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Label LBL;
     }
 }
